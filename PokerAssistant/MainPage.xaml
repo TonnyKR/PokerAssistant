@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokerAssistant.MainPage"
+             >
+
+
+    <Grid BackgroundColor="Purple" Padding="20">
+        <!-- Set background color here -->
+        <!-- Define 6 rows with equal height -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Define 11 columns with equal width -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Fill the grid with BoxViews and Labels -->
+
+        
+
+        <!-- Row 1 -->
+        <Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="11">
+
+            <Label x:Name="NameLabel" Text="Enter Player Name" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black" FontSize="Large"/>
+        </Grid>
+        
+
+        <!-- Row 2 -->
+        <Grid Grid.Row="2" Grid.Column="3" Grid.ColumnSpan="5">
+            <BoxView Color="LightSlateGray" />
+            <Entry x:Name="NameField" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="White" />
+        </Grid>
+        
+
+        <!-- Row 3 -->
+        <Grid Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="3">
+            <Button Text="Add Player" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="White" Clicked="AddPlayerName"/>
+        </Grid>
+
+
+        <Grid Grid.Row="3" Grid.Column="9" Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <Button x:Name="But" Text="Start Game" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="White" Clicked="StartGame" Scale="1"/>
+        </Grid>
+
+        <Grid Grid.Row="0" Grid.Column="9" Grid.ColumnSpan="3" Grid.RowSpan="3">
+            <Button x:Name="Butt" Text="Grid" HorizontalOptions="Fill" VerticalOptions="Fill" TextColor="White" Clicked="ShowGrid" Scale="1"/>
+        </Grid>
+
+
+    </Grid>
+
+</ContentPage>
+
+

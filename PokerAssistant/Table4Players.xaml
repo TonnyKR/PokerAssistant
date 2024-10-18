@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PokerAssistant.Table4Players">
+    <Grid>
+        <!-- Define 11 columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <!-- Define 6 rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Fill the grid with BoxViews and Labels displaying coordinates -->
+        <Grid Grid.Row="0" Grid.Column="0">
+            <BoxView Color="Red" />
+            <Label Text="(0,0)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="1">
+            <BoxView Color="Green" />
+            <Label Text="(0,1)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="2">
+            <BoxView Color="Blue" />
+            <Label Text="(0,2)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="3">
+            <BoxView Color="Yellow" />
+            <Label Text="(0,3)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="4">
+            <BoxView Color="Cyan" />
+            <Label Text="(0,4)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="5">
+            <BoxView Color="Magenta" />
+            <Label Text="(0,5)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="6">
+            <BoxView Color="Orange" />
+            <Label Text="(0,6)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="7">
+            <BoxView Color="Pink" />
+            <Label Text="(0,7)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="8">
+            <BoxView Color="Purple" />
+            <Label Text="(0,8)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="9">
+            <BoxView Color="Brown" />
+            <Label Text="(0,9)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="0" Grid.Column="10">
+            <BoxView Color="Gray" />
+            <Label Text="(0,10)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Grid.Column="0">
+            <BoxView Color="LightCoral" />
+            <Label Text="(1,0)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <BoxView Color="LightGreen" />
+            <Label Text="(1,1)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="2">
+            <BoxView Color="LightBlue" />
+            <Label Text="(1,2)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="3">
+            <BoxView Color="LightYellow" />
+            <Label Text="(1,3)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="4">
+            <BoxView Color="LightCyan" />
+            <Label Text="(1,4)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="5">
+            <BoxView Color="Magenta" />
+            <Label Text="(1,5)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="6">
+            <BoxView Color="LightSalmon" />
+            <Label Text="(1,6)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="7">
+            <BoxView Color="LightPink" />
+            <Label Text="(1,7)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="8">
+            <BoxView Color="Lavender" />
+            <Label Text="(1,8)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="9">
+            <BoxView Color="Tan" />
+            <Label Text="(1,9)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="1" Grid.Column="10">
+            <BoxView Color="LightGray" />
+            <Label Text="(1,10)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+
+        <!-- Continue filling in rows and columns -->
+        <Grid Grid.Row="2" Grid.Column="0">
+            <BoxView Color="Coral" />
+            <Label Text="(2,0)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="1">
+            <Image  HorizontalOptions="Center" VerticalOptions="Center" Source="player.png"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="2">
+            <BoxView Color="SteelBlue" />
+            <Label Text="(2,2)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="3">
+            <BoxView Color="Gold" />
+            <Label Text="(2,3)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="4">
+            <BoxView Color="Turquoise" />
+            <Label Text="(2,4)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="5">
+            <BoxView Color="Violet" />
+            <Label Text="(2,5)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="6">
+            <BoxView Color="PeachPuff" />
+            <Label Text="(2,6)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="7">
+            <BoxView Color="NavajoWhite" />
+            <Label Text="(2,7)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="8">
+            <BoxView Color="MistyRose" />
+            <Label Text="(2,8)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="9">
+            <Image  HorizontalOptions="Center" VerticalOptions="Center" Source="player.png"/>
+        </Grid>
+        <Grid Grid.Row="2" Grid.Column="10">
+            <BoxView Color="Wheat" />
+            <Label Text="(2,10)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+
+        <!-- Repeat for Rows 3, 4, and 5 -->
+        <Grid Grid.Row="3" Grid.Column="0">
+            <BoxView Color="DarkRed" />
+            <Label Text="(3,0)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="1">
+            <Label x:Name="Player1" Text="Player1" HorizontalOptions="Center" VerticalOptions="Start" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="2">
+            <BoxView Color="DarkBlue" />
+            <Label Text="(3,2)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="3">
+            <BoxView Color="DarkGoldenrod" />
+            <Label Text="(3,3)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="4">
+            <Image  HorizontalOptions="Center" VerticalOptions="Center" Source="player.png"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="5">
+            <BoxView Color="DarkMagenta" />
+            <Label Text="(3,5)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="6">
+            <Image  HorizontalOptions="Center" VerticalOptions="Center" Source="player.png"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="7">
+            <BoxView Color="Firebrick" />
+            <Label Text="(3,7)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="8">
+            <BoxView Color="SlateGray" />
+            <Label Text="(3,8)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="9">
+            <Label x:Name="Player4" Text="Player4" HorizontalOptions="Center" VerticalOptions="Start" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="3" Grid.Column="10">
+            <BoxView Color="Olive" />
+            <Label Text="(3,10)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+
+        <Grid Grid.Row="4" Grid.Column="0">
+            <BoxView Color="LightSeaGreen" />
+            <Label Text="(4,0)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="1">
+            <BoxView Color="LightSlateGray" />
+            <Label Text="" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="2">
+            <BoxView Color="LightSteelBlue" />
+            <Label Text="(4,2)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="3">
+            <BoxView Color="LimeGreen" />
+            <Label Text="(4,3)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="4">
+            <Label x:Name="Player2" Text="Player2" HorizontalOptions="Center" VerticalOptions="Start" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="5">
+            <BoxView Color="MediumPurple" />
+            <Label Text="(4,5)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="6">
+            <Label x:Name="Player3" Text="Player3" HorizontalOptions="Center" VerticalOptions="Start" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="7">
+            <BoxView Color="MediumSlateBlue" />
+            <Label Text="(4,7)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="8">
+            <BoxView Color="DarkKhaki" />
+            <Label Text="(4,8)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="9">
+            <BoxView Color="IndianRed" />
+            <Label Text="(4,9)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="4" Grid.Column="10">
+            <BoxView Color="RosyBrown" />
+            <Label Text="(4,10)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+
+        <Grid Grid.Row="5" Grid.Column="0">
+            <BoxView Color="DarkOliveGreen" />
+            <Label Text="(5,0)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="1">
+            <BoxView Color="DarkSeaGreen" />
+            <Label Text="(5,1)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="2">
+            <BoxView Color="LightPink" />
+            <Label Text="(5,2)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="3">
+            <BoxView Color="Salmon" />
+            <Label Text="(5,3)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="4">
+            <BoxView Color="SeaGreen" />
+            <Label Text="(5,4)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="5">
+            <BoxView Color="Chocolate" />
+            <Label Text="(5,5)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="White"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="6">
+            <BoxView Color="RosyBrown" />
+            <Label Text="(5,6)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="7">
+            <BoxView Color="Goldenrod" />
+            <Label Text="(5,7)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="8">
+            <BoxView Color="Plum" />
+            <Label Text="(5,8)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="9">
+            <BoxView Color="Thistle" />
+            <Label Text="(5,9)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+        <Grid Grid.Row="5" Grid.Column="10">
+            <BoxView Color="LightGray" />
+            <Label Text="(5,10)" HorizontalOptions="Center" VerticalOptions="Center" TextColor="Black"/>
+        </Grid>
+    </Grid>
+</ContentPage>
